@@ -17,6 +17,10 @@
 // DOES NOT WARRANT THAT THE OPERATION OF THE PROGRAM WILL BE
 // UNINTERRUPTED OR ERROR FREE.
 /////////////////////////////////////////////////////////////////////
+
+// Load environment variables from .env file if it exists
+require('dotenv').config();
+
 const express = require('express');
 const app = express();
 const server = require('http').Server(app);  
